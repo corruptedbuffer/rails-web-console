@@ -7,11 +7,6 @@ require "vmc"
 require "cli"
 require "uuidtools"
 
-USER = "dhigham@vmware.com"
-PASSWORD = ENV['vmc_pass']
-APP_NAME = "rails-test-dh"
-TARGET = "api.cloudfoundry.com"
-
 class Console < VMC::Cli::Command::Base
 
   include VMC::Cli::TunnelHelper
