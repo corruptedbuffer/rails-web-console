@@ -1,0 +1,17 @@
+body {
+  background-color: #333333;
+}
+
+form#start input {
+  height : 30px;
+}
+
+input[readonly] {
+  cursor: none;
+  background: none;
+}
+
+output, .input-line {
+  line-height : 16px;
+}
+

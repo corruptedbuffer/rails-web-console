@@ -1,0 +1,13 @@
+<div id="container"></div>
+<div class="interlace"></div>
+
+<script>
+  $(document).ready(function(){
+    var consoleClient = new ConsoleClient();
+    consoleClient.setup('<%= @guid %>', '<%= @prompt %>');
+
+    window.term = new Terminal('container', consoleClient);
+
+    // window.client = new Faye.Client('http://faye-dh.cloudfounry.com/');
+  });
+</script>
